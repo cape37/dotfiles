@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+ARTIST=$(nuvolaplayer3ctl track-info artist)
+TITLE=$(nuvolaplayer3ctl track-info title)
+SONG="$ARTIST $TITLE"
+OUTPUT=""
+ICON=""
+
+if [ -n "$(nuvolaplayer3ctl track-info | grep -E 'playing')" ]; then
+    ICON="f144"
+elif [ -n "$(nuvolaplayer3ctl track-info | grep -E 'paused')" ]; then
+    ICON="f28b"
+else
+    ICON="f28d"
+fi
+
+if [ -n "$ARTIST" ]; then
+    OUTPUT="$SONG"
+else
+    OUTPUT="-None-"
+fi
+
+echo -e "  \u${ICON}  ${OUTPUT} "
+
+exit 0

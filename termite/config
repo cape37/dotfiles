@@ -1,0 +1,75 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+visible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = source code pro 9
+scrollback_lines = 1000
+search_wrap = true
+#icon_name = terminal
+#geometry = 640x480
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default
+# browser = firefox
+
+# word characters used for word selection
+# (default if unset: all graphic non-punctuation/space characters)
+#word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+# set size hints for the window
+#size_hints = false
+
+# emit escape sequences for other keys modified by Control
+#modify_other_keys = false
+
+[colors]
+foreground = #c5c8c6
+background = rgba(67, 67, 67, 0.8)
+
+# if unset, will reverse foreground and background
+highlight = #373b41
+
+# colors from color0 to color254 can be set
+# Black + Grey
+color0 = #1d1f21
+color8 = #969896
+
+# Red + Bright Red
+color1 = #d54e53
+color9 = #cc6666
+
+# Green + Bright Green
+color2 = #b9ca4a
+color10 = #b5bd68
+
+# Yellow (Orange) + Bright Yellow (Yellow)
+color3 = #e7c547
+color11 = #de935f
+
+# Blue + Bright Blue
+color4 = #7aa6da
+color12 = #81a2be
+
+# Magenta (Purple) + Bright Magenta
+color5 = #c397d8
+color13 = #b294bb
+
+# Cyan (Aqua) + Bright Cyan
+color6 = #70c0b1
+color14 = #8abeb7
+
+# Light Grey (Selection) + White (Current Line)
+color7 = #373b41
+color15 = #282a2e
